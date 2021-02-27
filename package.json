@@ -1,0 +1,23 @@
+{
+  "name": "iut-deadlines-backend",
+  "version": "1.0.0",
+  "description": "IUT deadlines project backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShJavokhir/IUT-deadlines-backend.git"
+  },
+  "author": "ShJavokhir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShJavokhir/IUT-deadlines-backend/issues"
+  },
+  "homepage": "https://github.com/ShJavokhir/IUT-deadlines-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
