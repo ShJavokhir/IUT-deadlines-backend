@@ -1,17 +1,14 @@
 import express from 'express';
-import * as studentDegree from "../controllers/studentDegreeController.js";
+import * as studentDegreeController from "../controllers/studentDegreeController.js";
 
 const router = express.Router();
-
 router.use((req, res, next)=>{
     next();
 })
 
-router.get('/', studentDegree.getStudentDegree);
-router.post('/:name/:year', studentDegree.addStudentDegree);
-router.put('/:id', studentDegree.updateStudentDegree);
-router.delete('/', (req, res) => {
-
-});
+router.get('/', studentDegreeController.getStudentDegree);
+router.post('/', studentDegreeController.addStudentDegree);
+router.put('/:id', studentDegreeController.updateStudentDegree);
+router.delete('/', studentDegreeController.deleteStudentDegree);
 
 export default router;

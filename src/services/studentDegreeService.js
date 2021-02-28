@@ -1,21 +1,23 @@
 import * as studentDegreeModel from "../models/studentDegreeModel.js";
 
-const addStudentDegreeService = async (name, year)=>{
-    const sample = studentDegreeModel.studentDegreeModel({
-        name: name,
-        year: year
+const addStudentDegree = async (name, year)=>{
+    return new Promise((resolve, reject)=>{
+        const sample = studentDegreeModel.studentDegreeModel({
+            name: name,
+            year: year
+        });
+        
+        sample.save()
+        .then((data) => {
+            resolve(data);
+        })
+        .catch((error)=>{
+            reject(error);
+        })
     });
-
-    sample.save()
-    .then((data) => {
-        console.log(data)
-    })
-    .catch((error)=>{
-        console.log(error);
-    })
-
+    
 }
 
 export {
-    addStudentDegreeService
+    addStudentDegree
 }
