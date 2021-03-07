@@ -10,8 +10,15 @@ const addStudentDegreeSchema = Joi.object({
         .integer()
         .min(0)
         .max(15)
-})
+});
+
+const deleteStudentDegreeSchema = Joi.object({
+    id: Joi.string()
+        .max(30)
+        .required()
+});
 
 export {
-    addStudentDegreeSchema
+    addStudentDegreeSchema,
+    deleteStudentDegreeSchema
 }
