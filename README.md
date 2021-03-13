@@ -26,10 +26,10 @@ IUT deadlines app - helps students to find out their deadlines of assignments
 	- [ ] DELETE
 
 - Subject
-	- [ ] GET
-	- [ ] POST
+	- [x] GET
+	- [x] POST
 	- [ ] UPDATE
-	- [ ] DELETE
+	- [x] DELETE
 
 - User
 	- [ ] POST

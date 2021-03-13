@@ -1,5 +1,6 @@
 import dotenv from "dotenv";
 import studentDegree from "./api/studentDegreeRoute.js";
+import studentSubject from "./api/studentSubjectRoute.js";
 import express from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
@@ -24,11 +25,12 @@ mongoose
 
 //studentDegree endpoint
 app.use("/studentDegree", studentDegree);
+app.use("/studentSubject", studentSubject);
 
 app.use(function (err, req, res, next) {
-  
-  res.status(err.code).json({
-    status: "fail",
+  const statusCode = err.code || 400;
+  res.status(statusCode).json({
+    status: "fail😭",
     error: err.message,
   });
   next();

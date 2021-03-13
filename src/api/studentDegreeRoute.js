@@ -9,7 +9,7 @@ const router = express.Router();
 //studentDegree
 router.get('/', studentDegreeController.getStudentDegrees);
 router.post('/', studentDegreeController.addStudentDegree);
-router.put('/:id', studentDegreeController.updateStudentDegree);
+router.patch('/:id', studentDegreeController.updateStudentDegree);
 router.delete('/', studentDegreeController.deleteStudentDegree);
 
 export default router;
