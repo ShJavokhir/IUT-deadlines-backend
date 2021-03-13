@@ -1,5 +1,5 @@
 # IUT-deadlines-backend
-IUT deadlines app - helps students to find out their deadlines of assignments
+IUT deadlines app - helps students to find out their deadlines of their assignments
 
 ## Used technologies
 - NodeJS
